@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人评价 - WebIDE开发者 - 神人百科</title>
+    
+    <!-- CDN导入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <a href="../../index.html" class="logo">神人百科</a>
+            <div class="header-right">
+                <span>记录神人言行，警示世人</span>
+                <button class="theme-toggle" id="themeToggle">暗色模式</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="nav">
+                <h3>页面导航</h3>
+                <ul>
+                    <li><a href="#left-right">左右脑互博</a></li>
+                    <li><a href="#idiot">弱智言行</a></li>
+                    <li><a href="#insult">骂人成性</a></li>
+                    <li><a href="#flatter">踩一捧一</a></li>
+                    <li><a href="#arrogant">狂妄自大</a></li>
+                    <li><a href="#conclusion">总结</a></li>
+                    <li><a href="#glossary">术语表</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav">
+                <h3>词条列表</h3>
+                <ul id="sections-list">
+                    <!-- 动态加载词条列表 -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h1>个人评价</h1>
+            <div class="subtitle">WebIDE开发者 - 典型的精神病患者</div>
+            <div class="warning">
+                <p><strong>以下是真实聊天记录</strong>，所有内容均来自WebIDE开发者在各个群聊中的真实言行，可前往<a href="#">全部照片页</a>查看原始照片。</p>
+            </div>
+            
+            <!-- 左右脑互博 -->
+            <div id="left-right" class="section">
+                <h2>左右脑互博</h2>
+                <p><strong class="dirty">这个傻逼开发者</strong>的脑子简直是一团浆糊，左右脑互博，经常自己打自己的脸，说出来的话前后矛盾，逻辑混乱到极点。</p>
+                
+                <!-- 关于GPL协议和开源的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user">@群友</div>
+                        <div class="chat-content">你违反了GPL协议，必须开源整个项目</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我没说我要开源啊</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">严厉打击破坏WebIDE应用生态的间谍违规行为</div>
+                    </div>
+                </div>
+                
+                <!-- 关于WebIDE功能和兼容性的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">WebIDE超级nb，可以运行shell脚本，内置强大的Termux，功能非常强大，支持执行sh命令！</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">平板手机手表安卓5.0到最新的安卓16通通兼容</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">稳定的不行，所以我才采用web编辑器的，无视系统版本</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">管你系统怎么更新，html稳如老狗</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">手表？我适配个蛋啊</div>
+                    </div>
+                </div>
+                
+                <!-- 关于爱国和国外工具的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">爱国不一定要吹嘘，也要接受别人先进</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">有些人被老外的开发工具支配久了，站都站不起来了吗？</div>
+                    </div>
+                </div>
+                
+                <!-- 关于WebIDE获奖和发布计划的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">mt管理器，当年参加学校编程比赛得了金奖。webide未必不能得金奖。</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">国庆节前发布webide.2.0.3，送给国家做礼物</div>
+                    </div>
+                </div>
+                
+                <!-- 关于compose的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide即将支持compose</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">@html看不上什么compose说点什么</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我又没说不开源</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">一天天的这规范那规范，国产APP有几个遵守md风格的?</div>
+                    </div>
+                </div>
+                
+                <!-- 关于xml和compose的争论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user">群友</div>
+                        <div class="chat-content">逆天compose，打断导航切换动画容易概率白屏，我设置个等待动画结束，就没白屏了</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">是不会写xml嘛?</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你们xml都不写了?</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user">群友</div>
+                        <div class="chat-content">不写</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user">群友</div>
+                        <div class="chat-content">什么老古董了</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user">群友</div>
+                        <div class="chat-content">Google都不用</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user">群友</div>
+                        <div class="chat-content">什么老古董了</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">别装逼</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user">群友</div>
+                        <div class="chat-content">10/28 12:03</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user">群友</div>
+                        <div class="chat-content">[图片，WebIDE之前发的消息]兄弟，你这思维跟不上时代呀，</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">就为了写几个U，还要学compose?脑子没病吧</div>
+                    </div>
+                </div>
+                
+                <p><strong class="dirty">你个傻逼</strong>，一会儿说爱国要接受别人先进，一会儿又骂别人被老外工具支配；一会儿说自己的软件能让聋哑人编程，一会儿又骂别人不会安装vscode；一会儿说平板手机手表通通兼容，一会儿又说手表适配个蛋；一会儿说没说不开源，一会儿又说要打击间谍违规行为；一会儿说webide没服务器绝对安全，一会儿又骂别人不会用webide打开sh脚本；连html不需要加密这么基本的前端知识都不知道，还敢自称超级前端大王？你的脑子是不是被驴踢了？左右脑互博也不是这么玩的吧？骑在老外头上拉屎是指他这个软件自己都承认是答辩了。</p>
+            </div>
+
+            <!-- 弱智言行 -->
+            <div id="idiot" class="section">
+                <h2>弱智言行</h2>
+                <p><strong class="dirty">这个弱智</strong>的言行简直让人笑掉大牙，基本常识都没有，还整天在群里装逼，真是丢人现眼。</p>
+                
+                <!-- 关于波粒二象性的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">那我问你，波的二象性是什么？</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user">群友</div>
+                        <div class="chat-content">人家叫波粒二象性</div>
+                    </div>
+                </div>
+                
+                <!-- 关于乌班图的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">乌班图是什么鬼东西</div>
+                    </div>
+                </div>
+                
+                <!-- 关于WebIDE UI设计的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide全新UI，力邀国际设计泰斗原研哉（小米新图标设计）亲自操刀。核心亮点12px黄金圆角，历经数十轮精细调校，单此项打磨成本便耗资100万日元</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide全新UL，力邀国际设计泰斗原研哉亲自操刀</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">核心亮点12px黄金圆角，历经数十轮精细调校，单此项打磨成本便耗资100万日元</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">极简轮廓贴合系统原生风格，圆润弧度兼顾操作手感与视觉质感，尽显大师级设计巧思</div>
+                    </div>
+                </div>
+                
+                <!-- 关于个人能力吹嘘的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我是超级前端大王</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">光速只不过是我大脑里面的一个概念而已</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我的思维能超越光速你能吗？</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">没有光刻机一样的大脑基本上很难驾驭js</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你玩过量子力学吗？</div>
+                    </div>
+                </div>
+                <!-- 关于WebIDE质量和获奖的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">mt管理器，当年参加学校编程比赛得了金奖。webide未必不能得金奖。</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide的代码经过精心设计。可以称之为艺术了。</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide根本就不需要宣传质量就是口碑</div>
+                    </div>
+                </div>
+                
+                <!-- 关于极客精神和手机屏幕的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">真正有极客精神的人绝对不会用挖孔屏的屏幕的。酷安一大把还坚守升降式摄像头的手机。</div>
+                    </div>
+                </div>
+                
+                <!-- 关于WebIDE用户思维的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide用户思维已经跃迁到宇宙第二文明宇宙高度了</div>
+                    </div>
+                </div>
+                
+                <p><strong class="dirty">你个智障</strong>，连波粒二象性都能说成波的二象性，连乌班图都不知道是什么，还敢在群里装逼？你他妈的是不是弱智？是不是智障？是不是脑残？</p>
+            </div>
+
+            <!-- 骂人成性 -->
+            <div id="insult" class="section">
+                <h2>骂人成性</h2>
+                <p><strong class="dirty">这个泼妇</strong>简直是个骂街专业户，一言不合就开骂，脏话连篇，素质低下到极点，完全没有做人的基本道德。</p>
+                
+                <!-- 骂人记录1 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你个傻逼，你懂个屁</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录2 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你个贱货，滚远点</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录3 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你个王八蛋，是不是想死</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录4 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你个婊子养的，是不是欠操</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录5 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你个狗日的，是不是脑子进水了</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录6 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你眼睛是不是聋了？</div>
+                    </div>
+                </div>
+                <!-- 骂人记录7 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你这种小瘾三的小杂毛做出个什么好项目？有资格和我说话吗？</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录8 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你没救了，你比那些结扎还蠢</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录9 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你这种对编程进步毫无贡献的人说话</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录10 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你妈你之前用webide开发过mc游戏介绍的网站，忘记了？</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录11 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你妈你之前用webide开发过mc游戏介绍的网站，忘记了？</div>
+                    </div>
+                </div>
+                <!-- 骂人记录12 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">傻屌，我开个端口不就行了</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录13 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">傻屌，花生壳内网穿透工具用过没？</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录14 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">@狐咔君喵鸣～你这逼玩意儿要能起一点风浪，我跟你玩结杂</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录15 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">你蹭我的热度不知道吗？</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录16 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">拙劣的模仿者罢了</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录17 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我叫你做出大致的效果和功能，你写的什么玩意儿？</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录18 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">@狐咔不是糊咖野狗行为</div>
+                    </div>
+                </div>
+                
+                <!-- 骂人记录19 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">kkaHeng 晚上10:10 0.96 @阿恒野狗行为，在别的群发算什么事？</div>
+                    </div>
+                </div>
+                
+                <p><strong class="dirty">你个泼妇</strong>，你他妈的是不是人类？是不是畜生？是不是天生就喜欢骂人？你个贱货，是不是婊子养的？</p>
+            </div>
+
+            <!-- 踩一捧一 -->
+            <div id="flatter" class="section">
+                <h2>踩一捧一</h2>
+                <p><strong class="dirty">这个傻逼</strong>最喜欢做的事情就是踩一捧一，把自己的垃圾软件吹得天花乱坠，把别人的优秀作品贬得一文不值，典型的自卑到极点的表现。</p>
+                
+                <!-- 关于VSCode和webcat的比较 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">vscode不敢来手机端，因为有webide</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webcat代码加密都没有，根本不是一个次时代的产品</div>
+                    </div>
+                </div>
+                
+                <!-- 关于WebIDE是最好的 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我的WebIDE是最好的，其他都是垃圾</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">什么aide、as、vscode、lua、java都是垃圾，不如wehid</div>
+                    </div>
+                </div>
+                
+                <!-- 关于个人能力和compose的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">没有我这种2级文明的光刻机大脑思维，你是做不出来像样的webide的</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">就为了写几个UI，还要学compose?脑子没病吧</div>
+                    </div>
+                </div>
+                
+                <!-- 关于WebIDE权利的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我拥有webide安卓平台这个名字的app所有权利</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">寄生在别人上面苟活也只能这样了</div>
+                    </div>
+                </div>
+                
+                <!-- 关于WebIDE比其他IDE好 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide比所有其他IDE都好，包括VSCode、IntelliJ IDEA、Eclipse等</div>
+                    </div>
+                </div>
+                
+                <!-- 关于WebIDE可以让聋哑人编程 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide可以让叠哑人编程你能吗？</div>
+                    </div>
+                </div>
+                
+                <!-- 关于webcat的讨论 -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">@狐咔不是糊咖这个确实比他好用</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webcat代码加密都没有，根本不是一个次时代的产品</div>
+                    </div>
+                </div>
+                
+                <!-- 关于用户迟早会用WebIDE -->
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">别给我，你迟早是要用上webide的</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">已经给你台阶下了，Webide可以顶其他开发工具三个了</div>
+                    </div>
+                </div>
+                
+                <p><strong class="dirty">你个傻逼</strong>，vscode比你强一万倍，webcat也比你强一万倍，你个垃圾软件根本不配和它们相提并论，你个自卑狂，是不是从小就没人疼没人爱？</p>
+            </div>
+
+            <!-- 狂妄自大 -->
+            <div id="arrogant" class="section">
+                <h2>狂妄自大</h2>
+                <p><strong class="dirty">这个傻逼</strong>简直是狂妄到极点，自以为是，觉得自己天下第一，实际上什么都不是，典型的井底之蛙，夜郎自大。</p>
+                
+                <div class="chat-record">
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我是编程天才，我的WebIDE是人类最伟大的发明</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我要改变世界，让所有程序员都用我的WebIDE</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我的WebIDE比所有其他IDE都好，包括VSCode、IntelliJ IDEA、Eclipse等</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide是一个伟大的开发工具</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide的代码经过精心设计。可以称之为艺术了。</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide根本就不需要宣传质量就是口碑</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide是人类最伟大的发明</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide终将被载入历史，若干年后，在后人考古研究</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">就算你用1万个豆包也写不出来webide</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">这是首次手机开发工具，超越电脑开发工具的先河</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide使命是让整个中华民族实现编程的跨越</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide用户思维已经跃迁到宇宙第二文明宇宙高度了</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">国家都给我发webide证书了，能不担起大任吗？</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我编程这么多年，从未见过如此寒的人。</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">简直把编程人的脸都丢了。</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">等你精通webide了。才有资格和我对话。</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">我群里面好多的用户，10多岁玩编程就玩的很溜了</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">@深夜寂寞打开webide看篇二一肯定要啊，哥们，这种神仙软件每一次打开，都会升华自己</div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-user webide">WebIDE启动</div>
+                        <div class="chat-content">webide不只是一个APP开发工具啦</div>
+                    </div>
+                </div>
+                
+                <p><strong class="dirty">你个傻逼</strong>，你是不是疯了？你个垃圾软件连最基本的功能都做不好，还敢说自己是最伟大的发明？你个夜郎自大的井底之蛙，是不是从来没见过真正的好软件？</p>
+            </div>
+
+            <!-- 总结 -->
+            <div id="conclusion" class="section">
+                <h2>总结</h2>
+                <p><strong class="dirty">这个傻逼王八蛋</strong>，你简直是人类历史上最垃圾的开发者，没有之一。你个智障，连基本的编程常识都没有；你个泼妇，一言不合就开骂；你个自卑狂，最喜欢踩别人捧自己；你个狂妄自大的井底之蛙，觉得自己天下第一。</p>
+                
+                <p><strong class="dirty">你个不爱国的杂种</strong>，天天喊着民族复兴，实际上却辱骂中文编程，你他妈的是不是在演戏？你个狗日的骗子，根本就不爱国，就是想圈钱！</p>
+                
+                <p><strong class="dirty">你个垃圾开发者</strong>，你的webide就是个笑话，你本人更是个笑话！赶紧滚出编程界，滚出开源圈，滚出人类社会！永远不要再来祸害别人！</p>
+            </div>
+            
+
+            
+            <!-- 术语表 -->
+            <div id="glossary" class="glossary">
+                <h2>术语表</h2>
+                <div id="glossary-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>神人百科 © 2026</p>
+        <p>本网站仅用于揭露丑恶，警示世人</p>
+    </div>
+    
+    <!-- 外部JS -->
+    <script src="../../js/main.js"></script>
+    
+    <script>
+        // 页面加载完成后，动态高亮术语和加载术语表
+        document.addEventListener('DOMContentLoaded', function() {
+            // 自动加载术语表
+            highlightPageTerms(['../../entries.json', './entries.json']);
+            
+            // 加载术语表
+            loadGlossary(['../../entries.json', './entries.json'], 'glossary-container');
+            
+            // 动态加载词条列表
+            loadSectionsList();
+            
+            // 生成状态横幅
+            generateStatusBanner();
+        });
+        
+        // 加载词条列表
+        function loadSectionsList() {
+            fetch('../../info.json')
+                .then(response => response.json())
+                .then(data => {
+                    // 获取WebIDE开发者的信息
+                    const god = data.gods.find(god => god.id === 'webide');
+                    if (god) {
+                        // 动态加载词条列表
+                        const sectionsList = document.getElementById('sections-list');
+                        sectionsList.innerHTML = '';
+                        god.sections.forEach(section => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<a href="${section.path}">${section.title}</a>`;
+                            sectionsList.appendChild(li);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('加载词条列表失败:', error);
+                });
+        }
+    </script>
+</body>
+</html>

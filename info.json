@@ -1,0 +1,43 @@
+{
+  "gods": [
+    {
+      "id": "webide",
+      "name": "WebIDE开发者",
+      "category": "编程圈神人",
+      "description": "一个狂妄自大、言行矛盾、素质低下的Android开发者，以其垃圾项目webide-termux和弱智言行闻名于编程圈。",
+      "keywords": ["WebIDE", "webide-termux", "编程垃圾", "弱智言行", "左右脑互博"],
+      "path": "/s/webide",
+      "index": 9.5,
+      "avatar": "/res/wbide.jpg",
+      "sections": [
+        {
+          "id": "software",
+          "title": "软件评价",
+          "description": "WebIDE - 垃圾中的战斗机",
+          "path": "/s/webide/software.html",
+          "type": "评价",
+          "ai": true,
+          "data_verified": true
+        },
+        {
+          "id": "personal",
+          "title": "个人评价",
+          "description": "WebIDE开发者 - 典型的精神病患者",
+          "path": "/s/webide/personal.html",
+          "type": "评价",
+          "ai": true,
+          "data_verified": true
+        },
+        {
+          "id": "photos",
+          "title": "全部照片",
+          "description": "WebIDE开发者聊天记录截图 - 弱智言行的铁证",
+          "path": "/s/webide/photos.html",
+          "type": "照片",
+          "ai": false,
+          "data_verified": true
+        }
+      ]
+    }
+  ]
+}

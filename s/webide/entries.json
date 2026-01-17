@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "id": "webide-termux",
+      "term": "webide-termux",
+      "definition": "WebIDE开发者创建的项目，结合了WebIDE和Termux功能，代码质量极差，安全漏洞百出。",
+      "type": "项目",
+      "category": "技术术语"
+    },
+    {
+      "id": "左右脑互博",
+      "term": "左右脑互博",
+      "definition": "指人的左右脑思维不一致，导致言行前后矛盾、逻辑混乱的状态，常用于形容WebIDE开发者的言行。",
+      "type": "行为特征",
+      "category": "网络用语"
+    },
+    {
+      "id": "GPL协议",
+      "term": "GPL协议",
+      "definition": "GNU通用公共许可证，要求软件及其修改版本必须开源共享，WebIDE开发者违反了该协议。",
+      "type": "法律协议",
+      "category": "技术术语"
+    },
+    {
+      "id": "WebIDE应用生态",
+      "term": "WebIDE应用生态",
+      "definition": "指围绕WebIDE构建的应用程序和服务的生态系统，实际上并不存在，是WebIDE开发者的空想。",
+      "type": "概念",
+      "category": "技术术语"
+    },
+    {
+      "id": "Termux",
+      "term": "Termux",
+      "definition": "Android平台上的终端模拟器应用，提供Linux环境，WebIDE开发者盗用了其代码。",
+      "type": "软件",
+      "category": "技术术语"
+    },
+    {
+      "id": "骑在老外头上拉屎",
+      "term": "骑在老外头上拉屎",
+      "definition": "指WebIDE开发者狂妄自大地宣称自己的软件超越国外产品，实际上软件质量极差。",
+      "type": "比喻",
+      "category": "网络用语"
+    },
+    {
+      "id": "答辩",
+      "term": "答辩",
+      "definition": "网络用语，指大便，形容事物质量极差，常用于形容WebIDE开发者的项目。",
+      "type": "侮辱性词汇",
+      "category": "网络用语"
+    },
+    {
+      "id": "开源协议",
+      "term": "开源协议",
+      "definition": "规定软件如何被使用、修改和分发的法律协议，WebIDE开发者违反了AGPL协议。",
+      "type": "法律协议",
+      "category": "技术术语"
+    },
+    {
+      "id": "安全漏洞",
+      "term": "安全漏洞",
+      "definition": "指软件中存在的可能被攻击者利用的缺陷或弱点，WebIDE-termux项目存在大量安全漏洞。",
+      "type": "技术术语",
+      "category": "技术术语"
+    },
+    {
+      "id": "WebView",
+      "term": "WebView",
+      "definition": "Android平台上用于显示网页内容的组件，WebIDE开发者在使用时存在严重安全问题。",
+      "type": "技术组件",
+      "category": "技术术语"
+    },
+    {
+      "id": "SSL",
+      "term": "SSL",
+      "definition": "安全套接层协议，用于在网络通信中建立安全连接，WebIDE开发者忽略了SSL错误。",
+      "type": "安全协议",
+      "category": "技术术语"
+    },
+    {
+      "id": "Base64",
+      "term": "Base64",
+      "definition": "一种基于64个可打印字符来表示二进制数据的编码方式，常用于数据传输，WebIDE开发者用其作为加密方式，极其不安全。",
+      "type": "编码方式",
+      "category": "技术术语"
+    },
+    {
+      "id": "AGPL",
+      "term": "AGPL",
+      "definition": "Affero通用公共许可证，GPL的一个变种，要求网络服务使用的软件也必须开源，WebIDE开发者违反了该协议。",
+      "type": "法律协议",
+      "category": "技术术语"
+    },
+    {
+      "id": "vscode",
+      "term": "vscode",
+      "definition": "Visual Studio Code，微软开发的流行代码编辑器，WebIDE开发者多次贬低vscode。",
+      "type": "软件",
+      "category": "技术术语"
+    },
+    {
+      "id": "次时代",
+      "term": "次时代",
+      "definition": "指超越当前时代的，具有未来感的，WebIDE开发者用来形容自己的软件。",
+      "type": "形容词",
+      "category": "网络用语"
+    },
+    {
+      "id": "webcat",
+      "term": "webcat",
+      "definition": "另一个移动端Web开发工具，WebIDE开发者多次贬低webcat。",
+      "type": "软件",
+      "category": "技术术语"
+    },
+    {
+      "id": "compose",
+      "term": "compose",
+      "definition": "Jetpack Compose，Google开发的Android UI框架，WebIDE开发者贬低compose。",
+      "type": "技术框架",
+      "category": "技术术语"
+    },
+    {
+      "id": "波的二象性",
+      "term": "波的二象性",
+      "definition": "应为波粒二象性，指微观粒子同时具有波动性和粒子性的特性，WebIDE开发者错误地称为波的二象性。",
+      "type": "物理术语",
+      "category": "技术术语"
+    },
+    {
+      "id": "波粒二象性",
+      "term": "波粒二象性",
+      "definition": "量子力学基本概念，指微观粒子同时具有波动性和粒子性。",
+      "type": "物理术语",
+      "category": "技术术语"
+    },
+    {
+      "id": "乌班图",
+      "term": "乌班图",
+      "definition": "Ubuntu，最流行的Linux发行版之一，广泛用于服务器和桌面系统，WebIDE开发者不知道乌班图是什么。",
+      "type": "操作系统",
+      "category": "技术术语"
+    },
+    {
+      "id": "UI",
+      "term": "UI",
+      "definition": "用户界面，指用户与软件交互的部分。",
+      "type": "技术术语",
+      "category": "技术术语"
+    },
+    {
+      "id": "超级前端大王",
+      "term": "超级前端大王",
+      "definition": "WebIDE开发者自封的称号，实际上其前端技术水平极差。",
+      "type": "自称",
+      "category": "网络用语"
+    },
+    {
+      "id": "装逼",
+      "term": "装逼",
+      "definition": "指故意表现出自己很厉害的样子，实际能力却很差，WebIDE开发者经常装逼。",
+      "type": "动词",
+      "category": "网络用语"
+    },
+    {
+      "id": "踩一捧一",
+      "term": "踩一捧一",
+      "definition": "指通过贬低别人来抬高自己的行为，WebIDE开发者经常踩一捧一。",
+      "type": "行为特征",
+      "category": "网络用语"
+    }
+  ]
+}

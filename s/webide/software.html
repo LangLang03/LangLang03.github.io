@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件评价 - WebIDE开发者 - 神人百科</title>
+    
+    <!-- CDN导入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <a href="../../index.html" class="logo">神人百科</a>
+            <div class="header-right">
+                <span>记录神人言行，警示世人</span>
+                <button class="theme-toggle" id="themeToggle">暗色模式</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="nav">
+                <h3>页面导航</h3>
+                <ul>
+                    <li><a href="#intro">垃圾项目大揭秘</a></li>
+                    <li><a href="#code-quality">代码质量：狗屎都不如</a></li>
+                    <li><a href="#security">安全漏洞：生怕黑客不来操你</a></li>
+                    <li><a href="#license">开源协议：厚颜无耻的欺诈犯</a></li>
+                    <li><a href="#developer">开发者：人类渣滓中的战斗机</a></li>
+                    <li><a href="#conclusion">总结：垃圾项目滚出编程界</a></li>
+                    <li><a href="#glossary">术语表</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav">
+                <h3>词条列表</h3>
+                <ul id="sections-list">
+                    <!-- 动态加载词条列表 -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h1>软件评价</h1>
+            <div class="subtitle">WebIDE - 垃圾中的战斗机</div>
+            
+            <!-- 开场 -->
+            <div id="intro" class="section">
+                <h2>垃圾项目大揭秘</h2>
+                <p>今天，我们来揭露一个<strong class="dirty">Android史上最垃圾的项目</strong>——<code><span class="term" data-term-definition="WebIDE开发者创建的Android终端模拟器项目，结合了WebIDE和Termux功能">webide-termux</span></code>。这个项目从代码质量到安全漏洞，从性能到用户体验，全都是垃圾中的垃圾，渣滓中的渣滓。</p>
+                <p><strong class="dirty">这个傻逼开发者</strong>不仅技术垃圾，道德更是败坏到极点，用<span class="term" data-term-definition="规定软件如何被使用、修改和分发的法律协议">开源协议</span>的名义吸引用户，再用收费版本割韭菜，简直是开源界的败类，人类的渣滓。</p>
+            </div>
+
+            <!-- 代码质量 -->
+            <div id="code-quality" class="section">
+                <h2>代码质量：狗屎都不如</h2>
+                
+                <h3>命名规范：脑残智障的乱码</h3>
+                <p><strong class="dirty">你个狗日的傻逼</strong>，看看你取的那些变量名：<code>namk</code>、<code>pack</code>、<code>code</code>、<code>uri</code>、<code>ejs</code>、<code>icon</code>、<code>filx</code>... 这他妈的是用脚在键盘上乱滚出来的？还是你妈生你的时候把你脑子挤成浆糊了？</p>
+                <p><strong class="dirty">你个贱货婊子养的</strong>，方法名更绝：<code>zkf()</code>、<code>bcsz()</code>、<code>daba()</code>、<code>blob()</code>、<code>bcwg()</code>... 你他妈的是不是在玩密码游戏？还是你根本就没上过学，连人话都不会说？</p>
+                <p><strong class="dirty">你个王八蛋龟孙子</strong>，前端变量名也是一样的垃圾：<code>bzynav</code>、<code>bzynan</code>、<code>bzyab</code>、<code>bzya</code>... 你他妈的是不是专门学过乱码生成？取个名字都能取成这样，你是不是智障？</p>
+
+                <h3>异常处理：吃屎长大的废物</h3>
+                <p><strong class="dirty">你个贱货傻逼</strong>，满屏的<code>try { ... } catch (Exception e) {}</code>，异常全被你吃了，出了问题你连怎么死的都不知道。你他妈的是不是怕别人发现你代码有多烂？还是你根本就不会处理异常？</p>
+                <p><strong class="dirty">你个狗东西</strong>，前端的<code>try-catch</code>也是空的，你他妈的是不是在后端吃屎不够，还要在前端吃屎？你个王八蛋，是不是天生就喜欢吃屎？</p>
+
+                <h3>代码风格：混乱到怀疑人生</h3>
+                <p><strong class="dirty">你个傻逼王八蛋</strong>，代码缩进一会儿4空格，一会儿2空格，有的甚至没缩进，看起来就像一群醉汉在屏幕上乱爬。你他妈的是不是连编辑器的自动缩进都不会用？还是你故意想恶心人？</p>
+                <p><strong class="dirty">你个猪脑子</strong>，重复代码一大堆，文件操作、权限检查到处都是，你他妈的是不是不知道什么叫封装？你个傻逼，连最基本的DRY原则都不知道？</p>
+
+                <h3>前端代码：垃圾中的战斗机</h3>
+                <p><strong class="dirty">你个婊子养的贱货</strong>，前端HTML结构混乱，<code>&lt;style&gt;</code>标签满天飞，你他妈的是不是不知道什么叫外部CSS？CSS样式重复得跟你妈生的双胞胎似的，选择器混乱得一逼。</p>
+                <p><strong class="dirty">你个傻逼</strong>，JavaScript代码逻辑混乱，函数嵌套深到怀疑人生，你他妈的是不是不知道什么叫代码可读性？还有那些<code>alert</code>和<code>confirm</code>，你个傻逼是不是不知道这些方法会阻塞线程？</p>
+                <p><strong class="dirty">你个狗东西</strong>，前端性能差到极点，大量使用<code>document.write</code>和<code>innerHTML</code>，你他妈的是不是不知道这些方法性能差？你个猪脑子，连最基本的前端性能优化都不会？</p>
+            </div>
+
+            <!-- 安全漏洞 -->
+            <div id="security" class="section">
+                <h2><span class="term" data-term-definition="指软件中存在的可能被攻击者利用的缺陷或弱点">安全漏洞</span>：生怕黑客不来操你</h2>
+                
+                <h3><span class="term" data-term-definition="Android平台上用于显示网页内容的组件">WebView</span>安全：脑门上贴"快来操我"</h3>
+                <p><strong class="dirty">你个贱货婊子养的</strong>，<code>setAllowFileAccessFromFileURLs(true)</code>、<code>setAllowUniversalAccessFromFileURLs(true)</code>，这两个设置一开，等于在脑门上贴"快来操我"的标签。黑客随便发个请求就能操穿你的应用，你他妈的是不是贱到骨子里了？</p>
+                <p><strong class="dirty">你个傻逼</strong>，<code>onReceivedSslError</code>直接<code>handler.proceed()</code>，忽略<span class="term" data-term-definition="安全套接层协议，用于在网络通信中建立安全连接">SSL</span>错误，你他妈的是不是想让用户的信息被黑客劫走？你个狗东西，连SSL是干嘛的都不知道？</p>
+
+                <h3>JS加密：侮辱安全两个字</h3>
+                <p><strong class="dirty">你个智障王八蛋</strong>，JS代码加密用<span class="term" data-term-definition="一种基于64个可打印字符来表示二进制数据的编码方式，常用于数据传输">Base64</span>加字符串拼接，三岁小孩拿个解码器都能破解。你他妈的是不是在侮辱安全两个字？还是你根本就不知道什么叫加密？</p>
+                <p><strong class="dirty">你个狗日的傻逼</strong>，密码处理直接明文，你他妈的是不是想把用户的密码拱手送给黑客？你个贱货，是不是故意想害用户？</p>
+            </div>
+
+            <!-- 开源协议 -->
+            <div id="license" class="section">
+                <h2>开源协议：厚颜无耻的欺诈犯</h2>
+                
+                <h3><span class="term" data-term-definition="Affero通用公共许可证，GPL的一个变种，要求网络服务使用的软件也必须开源">AGPL</span>违反：开源界的叛徒</h3>
+                <p><strong class="dirty">你个狗日的欺诈犯</strong>，打着AGPL的旗号，却把阉割版的代码开源，收费版本加核心功能。你他妈的是不是把开源协议当擦屁股纸？还是你天生就是个骗子？</p>
+                <p><strong class="dirty">你个贱货婊子养的</strong>，AGPL要求修改后必须开源，你他妈的倒好，藏着核心功能收费，你个傻逼是不是天生就喜欢骗钱？</p>
+                <p><strong class="dirty">你个法盲傻逼</strong>，你可能不知道违反开源协议会吃官司吧？你个狗东西，是不是觉得没人会告你？</p>
+            </div>
+
+            <!-- 开发者个人 -->
+            <div id="developer" class="section">
+                <h2>开发者：人类渣滓中的战斗机</h2>
+                
+                <h3>编程能力：傻逼中的战斗机</h3>
+                <p><strong class="dirty">你个狗日的傻逼</strong>，连基本的命名规范和异常处理都不懂，简直是编程界的耻辱。活着浪费空气，死了浪费土地，编程浪费键盘。</p>
+                <p><strong class="dirty">你个猪脑子</strong>，前端代码写得像狗屎，你他妈的是不是根本就不会前端开发？你个傻逼，连最基本的HTML、CSS、JavaScript都不会？</p>
+                <p><strong class="dirty">你个智障王八蛋</strong>，性能优化一窍不通，字符串拼接用<code>+</code>，文件操作没缓冲，你他妈的是不是不知道什么叫性能？</p>
+
+                <h3>道德品质：婊子不如的贱货</h3>
+                <p><strong class="dirty">你个贱货婊子养的</strong>，用开源的名义吸引用户，再用收费版本割韭菜，你他妈的是不是不要脸到极点了？你天生就是个骗子，连最基本的诚信都没有。</p>
+                <p><strong class="dirty">你个狗日的傻逼</strong>，在群里发逆天言论，你他妈的是不是连最基本的做人都不会？你个畜生，是不是畜生转世？</p>
+                <p><strong class="dirty">你个王八蛋龟孙子</strong>，根本不在乎用户体验，代码写得乱七八糟，你他妈的是不是贱，就喜欢看用户受罪？</p>
+            </div>
+
+            <!-- 总结 -->
+            <div id="conclusion" class="section">
+                <h2>总结：垃圾项目滚出编程界</h2>
+                <p><strong class="dirty">你个狗日的傻逼王八蛋</strong>，你的<code>webide-termux</code>就是Android史上最垃圾的项目，没有之一。代码烂到流脓，安全漏洞满天飞，性能慢到怀疑人生，前端代码丑到辣眼睛，还公然违反开源协议，欺诈用户。</p>
+                <p><strong class="dirty">你个贱货婊子养的畜生</strong>，你他妈的是不是人类的渣滓？是不是畜生转世？是不是天生就喜欢骗钱？你个傻逼，赶紧滚出编程界，滚出开源圈，滚出人类社会！</p>
+                <p><strong class="dirty">你个狗东西</strong>，祝你早日被雷劈死，省得再祸害别人。哦不，雷劈你都嫌脏了雷！</p>
+            </div>
+            
+            <!-- 术语表 -->
+            <div id="glossary" class="glossary">
+                <h2>术语表</h2>
+                <div id="glossary-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>神人百科 © 2026</p>
+        <p>本网站仅用于揭露丑恶，警示世人</p>
+    </div>
+    
+    <!-- 外部JS -->
+    <script src="../../js/main.js"></script>
+    
+    <script>
+        // 页面加载完成后，动态高亮术语和加载术语表
+        document.addEventListener('DOMContentLoaded', function() {
+            // 自动加载术语表
+            highlightPageTerms(['../../entries.json', './entries.json']);
+            
+            // 加载术语表
+            loadGlossary(['../../entries.json', './entries.json'], 'glossary-container');
+            
+            // 动态加载词条列表
+            loadSectionsList();
+            
+            // 生成状态横幅
+            generateStatusBanner();
+        });
+        
+        // 加载词条列表
+        function loadSectionsList() {
+            fetch('../../info.json')
+                .then(response => response.json())
+                .then(data => {
+                    // 获取WebIDE开发者的信息
+                    const god = data.gods.find(god => god.id === 'webide');
+                    if (god) {
+                        // 动态加载词条列表
+                        const sectionsList = document.getElementById('sections-list');
+                        sectionsList.innerHTML = '';
+                        god.sections.forEach(section => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<a href="${section.path}">${section.title}</a>`;
+                            sectionsList.appendChild(li);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('加载词条列表失败:', error);
+                });
+        }
+    </script>
+</body>
+</html>

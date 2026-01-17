@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全部照片 - WebIDE开发者 - 神人百科</title>
+    
+    <!-- CDN导入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <!-- 图片放大模态框 -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    <div class="header">
+        <div class="header-content">
+            <a href="../../index.html" class="logo">神人百科</a>
+            <div class="header-right">
+                <span>记录神人言行，警示世人</span>
+                <button class="theme-toggle" id="themeToggle">暗色模式</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="nav">
+                <h3>页面导航</h3>
+                <ul>
+                    <li><a href="#all-photos">全部照片</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav">
+                <h3>词条列表</h3>
+                <ul id="sections-list">
+                    <!-- 动态加载词条列表 -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h1>全部照片</h1>
+            <div class="subtitle">WebIDE开发者聊天记录截图 - 弱智言行的铁证</div>
+            
+            <div id="all-photos" class="section">
+                <h2>所有聊天记录截图</h2>
+                <p><strong class="dirty">这些照片</strong>是WebIDE开发者弱智言行的真实证据，记录了他在各种群聊中的傻逼言论，包括左右脑互博、弱智言行、骂人成性、踩一捧一等等。</p>
+                <p><strong class="dirty">这个傻逼</strong>的言行简直令人发指，完全没有做人的基本道德和素质，是编程界的耻辱，开源圈的败类！</p>
+                
+                <div class="photo-grid">
+                    <!-- 照片将通过JavaScript动态加载 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>神人百科 © 2026</p>
+        <p>本网站仅用于揭露丑恶，警示世人</p>
+    </div>
+    
+    <!-- 外部JS -->
+    <script src="../../js/main.js"></script>
+    
+    <script>
+        // 从JSON文件动态加载照片
+        const photoGrid = document.querySelector('.photo-grid');
+        
+        // 页面加载完成后，动态高亮术语
+        document.addEventListener('DOMContentLoaded', function() {
+            highlightPageTerms(['../../entries.json', './entries.json']);
+            
+            // 动态加载词条列表
+            loadSectionsList();
+            
+            // 从photos.json动态加载照片
+            loadPhotos();
+            
+            // 生成状态横幅
+            generateStatusBanner();
+        });
+        
+        // 加载照片
+        function loadPhotos() {
+            fetch('./photos.json')
+                .then(response => response.json())
+                .then(photos => {
+                    photos.forEach(photo => {
+                        const photoItem = document.createElement('div');
+                        photoItem.className = 'photo-item';
+                        photoItem.innerHTML = `
+                            <img src="./photos/${photo}" alt="聊天记录截图">
+                        `;
+                        photoGrid.appendChild(photoItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('加载照片失败:', error);
+                    photoGrid.innerHTML = '<p class="dirty">加载照片失败，请稍后重试</p>';
+                });
+        }
+        
+        // 加载词条列表
+        function loadSectionsList() {
+            fetch('../../info.json')
+                .then(response => response.json())
+                .then(data => {
+                    // 获取WebIDE开发者的信息
+                    const god = data.gods.find(god => god.id === 'webide');
+                    if (god) {
+                        // 动态加载词条列表
+                        const sectionsList = document.getElementById('sections-list');
+                        sectionsList.innerHTML = '';
+                        god.sections.forEach(section => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<a href="${section.path}">${section.title}</a>`;
+                            sectionsList.appendChild(li);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('加载词条列表失败:', error);
+                });
+        }
+    </script>
+</body>
+</html>

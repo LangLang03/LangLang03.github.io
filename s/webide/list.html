@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebIDE开发者 - 神人百科</title>
+    
+    <!-- CDN导入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+                <a href="../../index.html" class="logo">神人百科</a>
+                <div class="header-right">
+                    <span>记录神人言行，警示世人</span>
+                    <button class="theme-toggle" id="themeToggle">暗色模式</button>
+                </div>
+            </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="nav">
+                <h3>页面导航</h3>
+                <ul>
+                    <li><a href="#personal-info">个人信息</a></li>
+                    <li><a href="#sections">评价与照片</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav">
+                <h3>词条列表</h3>
+                <ul id="sections-list">
+                    <!-- 动态加载词条列表 -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h1>WebIDE开发者</h1>
+            <div class="subtitle">编程圈神人</div>
+            
+            <!-- 个人信息 -->
+            <div id="personal-info" class="section">
+                <h2>个人信息</h2>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <strong>类别：</strong>编程圈神人
+                    </div>
+                    <div class="info-item">
+                        <strong>神人指数：</strong><span class="god-index">9.5</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>描述：</strong>
+                        <p>一个狂妄自大、言行矛盾、素质低下的Android开发者，以其垃圾项目webide-termux和弱智言行闻名于编程圈。</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>关键词：</strong>
+                        <div class="god-keywords">
+                            <span class="keyword">WebIDE</span>
+                            <span class="keyword">webide-termux</span>
+                            <span class="keyword">编程垃圾</span>
+                            <span class="keyword">弱智言行</span>
+                            <span class="keyword">左右脑互博</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 评价和照片部分 -->
+            <div id="sections" class="section">
+                <h2>评价与照片</h2>
+                <div id="sections-container" class="sections-container">
+                    <!-- 动态加载评价和照片部分 -->
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>神人百科 © 2026</p>
+        <p>本网站仅用于揭露丑恶，警示世人</p>
+    </div>
+    
+    <!-- 外部JS -->
+    <script src="../../js/main.js"></script>
+    
+    <script>
+        // 页面加载完成后，动态加载神人信息和相关条目
+        document.addEventListener('DOMContentLoaded', function() {
+            // 加载页面内容
+            loadPageContent();
+            
+            // 生成状态横幅
+            generateStatusBanner();
+        });
+        
+        // 加载页面内容
+        function loadPageContent() {
+            fetch('../../info.json')
+                .then(response => response.json())
+                .then(data => {
+                    // 获取WebIDE开发者的信息
+                    const god = data.gods.find(god => god.id === 'webide');
+                    if (god) {
+                        // 显示评价和照片部分
+                        const sectionsContainer = document.getElementById('sections-container');
+                        sectionsContainer.innerHTML = '';
+                        god.sections.forEach(section => {
+                            const sectionCard = document.createElement('div');
+                            sectionCard.className = 'entry-card';
+                            sectionCard.innerHTML = `
+                                <h3><a href="${section.path}">${section.title}</a></h3>
+                                <div class="section-description">${section.description}</div>
+                                <div class="section-type">${section.type}</div>
+                            `;
+                            sectionsContainer.appendChild(sectionCard);
+                        });
+                        
+                        // 动态加载词条列表
+                        const sectionsList = document.getElementById('sections-list');
+                        sectionsList.innerHTML = '';
+                        god.sections.forEach(section => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<a href="${section.path}">${section.title}</a>`;
+                            sectionsList.appendChild(li);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('加载页面内容失败:', error);
+                    document.getElementById('sections-container').innerHTML = '<p class="dirty">加载内容失败，请稍后重试</p>';
+                });
+        }
+    </script>
+</body>
+</html>

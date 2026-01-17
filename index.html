@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神人百科</title>
+    
+    <!-- CDN导入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        /* 主页特定样式 */
+        .hero-section {
+            padding: 1em 0 0 0;
+            margin: 0 0 1em 0;
+            text-align: left;
+        }
+        
+        .hero-section h2 {
+            font-size: 2.5em;
+            margin: 0 0 0.3em 0;
+            color: var(--text-color);
+            border-bottom: none;
+            font-weight: bold;
+        }
+        
+        .hero-section p {
+            font-size: 1.1em;
+            margin: 0 0 1em 0;
+            color: var(--subtitle-color);
+            max-width: 80%;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1em;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin: 0 0 1em 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8em 1.5em;
+            background-color: var(--link-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        
+        .btn:hover {
+            background-color: #2a8fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-secondary {
+            background-color: var(--content-background);
+            color: var(--link-color);
+            border: 1px solid var(--link-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--link-color);
+            color: white;
+        }
+        
+        .features-section {
+            margin: 4em 0 2em 0;
+        }
+        
+        .features-section h2 {
+            margin-top: 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2em;
+            margin: 2em 0;
+        }
+        
+        .feature-card {
+            background-color: var(--article-background);
+            border: 1px solid var(--article-border);
+            border-radius: 4px;
+            padding: 2em;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-color: var(--link-color);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            color: var(--link-color);
+            margin-bottom: 1em;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1em;
+            color: var(--text-color);
+        }
+        
+        .feature-card p {
+            color: var(--subtitle-color);
+        }
+        
+        .gods-section {
+            margin: 3em 0;
+        }
+        
+        .gods-container {
+            display: grid;
+            gap: 1.5em;
+        }
+        
+        .god-card {
+            display: flex;
+            gap: 1.5em;
+            align-items: flex-start;
+            padding: 1.5em;
+            background-color: var(--article-background);
+            border: 1px solid var(--article-border);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .god-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-color: var(--link-color);
+        }
+        
+        .god-avatar {
+            flex-shrink: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--link-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: white;
+        }
+        
+        .god-info {
+            flex-grow: 1;
+        }
+        
+        .god-info h3 {
+            margin-bottom: 0.5em;
+            color: var(--link-color);
+        }
+        
+        .god-info h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .god-info h3 a:hover {
+            text-decoration: underline;
+        }
+        
+        .god-category {
+            font-size: 0.9em;
+            color: var(--subtitle-color);
+            margin-bottom: 0.5em;
+        }
+        
+        .god-description {
+            margin-bottom: 1em;
+            color: var(--text-color);
+        }
+        
+        .god-index {
+            display: inline-block;
+            background-color: var(--link-color);
+            color: white;
+            padding: 0.2em 0.8em;
+            border-radius: 12px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .god-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em;
+            margin-top: 1em;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2em;
+            }
+            
+            .hero-section p {
+                font-size: 1em;
+            }
+            
+            .god-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            
+            .content {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">神人百科</a>
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="搜索神人和条目..." class="search-input">
+                    <button id="searchButton" class="search-button">搜索</button>
+                </div>
+                <button class="theme-toggle" id="themeToggle">暗色模式</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="nav">
+                <h3>快速导航</h3>
+                <ul>
+                    <li><a href="#features">网站特色</a></li>
+                    <li><a href="#gods">神人列表</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav">
+                <h3>关于我们</h3>
+                <ul>
+                    <li><a href="#about">网站介绍</a></li>
+                    <li><a href="#contact">联系方式</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- 英雄区域 -->
+            <div class="hero-section">
+                <h2>神人百科</h2>
+                <p>记录世间神人，揭露丑恶嘴脸，警示世人引以为戒</p>
+                <div class="hero-buttons">
+                    <a href="#gods" class="btn">浏览神人</a>
+                    <a href="#about" class="btn btn-secondary">了解更多</a>
+                </div>
+            </div>
+            
+            <!-- 特色内容 -->
+            <div id="features" class="features-section">
+                <h2>网站特色</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>神人记录</h3>
+                        <p>详细记录编程圈各类神人，包括其言行、作品和影响，让世人看清其真实面目。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>智能搜索</h3>
+                        <p>强大的搜索功能，支持按关键词、类别等多种方式查找神人，快速定位所需信息。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>客观评价</h3>
+                        <p>基于事实的客观评价，区分AI创作和真实数据，让读者了解信息的可靠性。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 神人列表 -->
+            <div id="gods" class="gods-section">
+                <h2>神人列表</h2>
+                <div id="gods-container" class="gods-container">
+                    <!-- 动态加载神人列表 -->
+                </div>
+            </div>
+            
+            <!-- 关于我们 -->
+            <div id="about" class="about-section section">
+                <h2>关于我们</h2>
+                <div class="about-content">
+                    <p>神人百科是一个致力于记录和揭露编程圈中各类神人言行的网站。我们的使命是通过客观、真实的记录，让世人看清这些神人的真实面目，警示后来者引以为戒。</p>
+                    <p>我们坚持以事实为依据，对所有内容进行严格的审核和验证，同时区分AI创作和真实数据，确保读者能够获得可靠的信息。</p>
+                    <p>欢迎大家提供线索和反馈，共同维护一个健康、理性的编程社区。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>神人百科 © 2026</p>
+        <p>本网站仅用于揭露丑恶，警示世人</p>
+    </div>
+    
+    <!-- 外部JS -->
+    <script src="js/main.js"></script>
+    
+    <script>
+        // 页面加载完成后，动态加载神人信息
+        document.addEventListener('DOMContentLoaded', function() {
+            // 加载神人列表
+            loadGods();
+        });
+        
+        // 加载神人列表
+        function loadGods() {
+            fetch('info.json')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('gods-container');
+                    if (data.gods && data.gods.length > 0) {
+                        container.innerHTML = '';
+                        data.gods.forEach(god => {
+                            const godCard = document.createElement('div');
+                            godCard.className = 'god-card';
+                            
+                            // 生成关键词HTML
+                            let keywordsHtml = '';
+                            if (god.keywords && god.keywords.length > 0) {
+                                keywordsHtml = '<div class="god-keywords">';
+                                god.keywords.forEach(keyword => {
+                                    keywordsHtml += `<span class="keyword">${keyword}</span>`;
+                                });
+                                keywordsHtml += '</div>';
+                            }
+                            
+                            // 生成神人卡片HTML
+                            godCard.innerHTML = `
+                                <div class="god-avatar">
+                                    ${god.avatar ? `<img src="${god.avatar}" alt="${god.name}" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">` : '<i class="fas fa-user-secret"></i>'}
+                                </div>
+                                <div class="god-info">
+                                    <h3><a href="${god.path}/list.html">${god.name}</a></h3>
+                                    <div class="god-category">${god.category}</div>
+                                    <div class="god-description">${god.description}</div>
+                                    <div class="god-index">神人指数：${god.index}</div>
+                                    ${keywordsHtml}
+                                </div>
+                            `;
+                            
+                            container.appendChild(godCard);
+                        });
+                    } else {
+                        container.innerHTML = '<p>暂无神人数据</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('加载神人列表失败:', error);
+                    document.getElementById('gods-container').innerHTML = '<p class="dirty">加载神人列表失败，请稍后重试</p>';
+                });
+        }
+    </script>
+</body>
+</html>
