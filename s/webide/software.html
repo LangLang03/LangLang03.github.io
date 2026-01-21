@@ -30,6 +30,8 @@
                     <li><a href="#intro">垃圾项目大揭秘</a></li>
                     <li><a href="#code-quality">代码质量：狗屎都不如</a></li>
                     <li><a href="#security">安全漏洞：生怕黑客不来操你</a></li>
+                    <li><a href="#packaging-fraud">打包收费：欺诈用户的婊子行为</a></li>
+                    <li><a href="#sandbox-attack">沙箱缺失：随便被操的烂货</a></li>
                     <li><a href="#license">开源协议：厚颜无耻的欺诈犯</a></li>
                     <li><a href="#developer">开发者：人类渣滓中的战斗机</a></li>
                     <li><a href="#conclusion">总结：垃圾项目滚出编程界</a></li>
@@ -63,7 +65,8 @@
                 <h3>命名规范：脑残智障的乱码</h3>
                 <p><strong class="dirty">你个狗日的傻逼</strong>，看看你取的那些变量名：<code>namk</code>、<code>pack</code>、<code>code</code>、<code>uri</code>、<code>ejs</code>、<code>icon</code>、<code>filx</code>... 这他妈的是用脚在键盘上乱滚出来的？还是你妈生你的时候把你脑子挤成浆糊了？</p>
                 <p><strong class="dirty">你个贱货婊子养的</strong>，方法名更绝：<code>zkf()</code>、<code>bcsz()</code>、<code>daba()</code>、<code>blob()</code>、<code>bcwg()</code>... 你他妈的是不是在玩密码游戏？还是你根本就没上过学，连人话都不会说？</p>
-                <p><strong class="dirty">你个王八蛋龟孙子</strong>，前端变量名也是一样的垃圾：<code>bzynav</code>、<code>bzynan</code>、<code>bzyab</code>、<code>bzya</code>... 你他妈的是不是专门学过乱码生成？取个名字都能取成这样，你是不是智障？</p>
+                <p><strong class="dirty">你个王八蛋龟孙子</strong>，还有那个傻逼的<code>device()</code>方法，名字倒是看起来像个人话，结果实现就是个垃圾！把设备信息长度取模后拼接成10位数字，这他妈的也叫设备识别？你是不是智障？</p>
+                <p><strong class="dirty">你个狗日的傻逼</strong>，前端变量名也是一样的垃圾：<code>bzynav</code>、<code>bzynan</code>、<code>bzyab</code>、<code>bzya</code>... 你他妈的是不是专门学过乱码生成？取个名字都能取成这样，你是不是智障？</p>
 
                 <h3>异常处理：吃屎长大的废物</h3>
                 <p><strong class="dirty">你个贱货傻逼</strong>，满屏的<code>try { ... } catch (Exception e) {}</code>，异常全被你吃了，出了问题你连怎么死的都不知道。你他妈的是不是怕别人发现你代码有多烂？还是你根本就不会处理异常？</p>
@@ -86,12 +89,40 @@
                 <h3><span class="term" data-term-definition="Android平台上用于显示网页内容的组件">WebView</span>安全：脑门上贴"快来操我"</h3>
                 <p><strong class="dirty">你个贱货婊子养的</strong>，<code>setAllowFileAccessFromFileURLs(true)</code>、<code>setAllowUniversalAccessFromFileURLs(true)</code>，这两个设置一开，等于在脑门上贴"快来操我"的标签。黑客随便发个请求就能操穿你的应用，你他妈的是不是贱到骨子里了？</p>
                 <p><strong class="dirty">你个傻逼</strong>，<code>onReceivedSslError</code>直接<code>handler.proceed()</code>，忽略<span class="term" data-term-definition="安全套接层协议，用于在网络通信中建立安全连接">SSL</span>错误，你他妈的是不是想让用户的信息被黑客劫走？你个狗东西，连SSL是干嘛的都不知道？</p>
+                <p><strong class="dirty">你个智障王八蛋</strong>，这种配置直接导致中间人攻击变得极其容易，黑客随便就能劫持你的通信，窃取用户数据，你他妈的是不是故意想让用户遭殃？</p>
 
                 <h3>JS加密：侮辱安全两个字</h3>
                 <p><strong class="dirty">你个智障王八蛋</strong>，JS代码加密用<span class="term" data-term-definition="一种基于64个可打印字符来表示二进制数据的编码方式，常用于数据传输">Base64</span>加字符串拼接，三岁小孩拿个解码器都能破解。你他妈的是不是在侮辱安全两个字？还是你根本就不知道什么叫加密？</p>
                 <p><strong class="dirty">你个狗日的傻逼</strong>，密码处理直接明文，你他妈的是不是想把用户的密码拱手送给黑客？你个贱货，是不是故意想害用户？</p>
             </div>
 
+            <!-- 打包收费：欺诈用户的婊子行为 -->
+            <div id="packaging-fraud" class="section">
+                <h2>打包收费：欺诈用户的婊子行为</h2>
+                
+                <h3>收费模式：9块9割韭菜</h3>
+                <p><strong class="dirty">你个狗日的欺诈犯</strong>，在群里公然说"9块9收费不给钱不让打包"，把用户当韭菜割，简直不要脸到极点！你他妈的是不是觉得用户都是傻子？</p>
+                <p><strong class="dirty">你个贱货婊子养的</strong>，还厚颜无耻地说"在国内你不搞强制有人给你打赏吗？傻子吧"，你他妈的是不是天生就喜欢骗钱？是不是觉得自己很聪明？</p>
+                
+                <h3>授权验证：小学生都能破解</h3>
+                <p><strong class="dirty">你个傻逼弱智</strong>，授权验证机制简直简单到令人发指！看看你的<code>device()</code>方法，只是把设备信息长度取模后拼接成10位数字，连个像样的加密都没有！</p>
+                <p><strong class="dirty">你个猪脑子</strong>，授权码计算逻辑更傻逼：把device()返回的10位数字分成两部分，前7位和后3位相加，再取模1000000，这他妈的就是你的授权码？你他妈的是不是在侮辱用户的智商？</p>
+                <p><strong class="dirty">你个狗日的骗子</strong>，随便写个脚本就能生成无限个授权码，还要用户花9.9块买？你他妈的是不是想钱想疯了？</p>
+            </div>
+            
+            <!-- 沙箱缺失：随便被操的烂货 -->
+            <div id="sandbox-attack" class="section">
+                <h2>沙箱缺失：随便被操的烂货</h2>
+                
+                <h3>沙箱机制：完全没有</h3>
+                <p><strong class="dirty">你个傻逼王八蛋</strong>，群友都指出了"没有任何沙箱机制，任何代码都能执行"，你他妈的还敢吹牛逼说"WebIDE超级安全"？你他妈的是不是眼瞎了？</p>
+                <p><strong class="dirty">你个贱货婊子养的</strong>，还说"WebIDE没服务器，说明绝对的安全"，结果呢？连最基本的沙箱都没有，任何恶意代码都能在用户设备上随便跑，你他妈的是不是在找死？</p>
+                
+                <h3>中间人攻击：随便就能操穿</h3>
+                <p><strong class="dirty">你个狗日的傻逼</strong>，群友还说了"只需要劫持他加载的js，就可以在设备上执行任何java，php代码"，你他妈的是不是觉得用户的设备都是你的玩具？想怎么操就怎么操？</p>
+                <p><strong class="dirty">你个智障王八蛋</strong>，进软件得给10几个权限，再加上沙箱缺失，用户的设备简直就是一个不设防的妓院，随便什么阿猫阿狗都能进去操！</p>
+            </div>
+            
             <!-- 开源协议 -->
             <div id="license" class="section">
                 <h2>开源协议：厚颜无耻的欺诈犯</h2>
